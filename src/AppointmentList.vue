@@ -10,19 +10,24 @@
 
 <script>
 
-  import AppointmentListItem from './AppointmentListItem.vue'
+import AppointmentListItem from './AppointmentListItem.vue';
 
-  export default {
-    name: 'AppointmentsList',
-    props: ['appointments'],
-    components: {
-      'appointment-item': AppointmentListItem
-    }
-  }
+export default {
+  name: 'AppointmentList',
+
+  props: ['appointments'],
+
+  components: {
+    'appointment-item': AppointmentListItem
+  }, //components
+
+} //export
 </script>
 
-<style lang="scss" scoped>
-  .appointment-list{
+
+
+<style scoped>
+  .appointment-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
